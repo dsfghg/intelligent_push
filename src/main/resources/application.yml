@@ -1,0 +1,30 @@
+app:
+  id: intelligent_push
+
+server:
+  port: 7788
+
+spring:
+  application:
+    name: intelligent_push
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+    serialization:
+      write-dates-as-timestamps: false
+
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/intelligent_system?tinyInt1isBit=false&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&failOverReadOnly=false&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=GMT%2B8
+    username: root
+    password: 2024@1024.
+
+
+
+wenxin:
+  model:
+  access:
+    key:
+  secret:
+    key:
